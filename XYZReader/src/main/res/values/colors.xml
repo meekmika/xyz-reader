@@ -23,4 +23,5 @@
     <color name="theme_primary_light">#4A6572</color>
     <color name="theme_accent">#607d8b</color>
     <color name="ltgray">#ffe0e0e0</color>
+    <color name="byline_text_color">#8fff</color>
 </resources>

@@ -84,7 +84,7 @@
                     android:fontFamily="sans-serif-condensed"
                     android:lineSpacingMultiplier="0.9"
                     android:paddingBottom="@dimen/detail_metabar_title_bottom_padding"
-                    android:textColor="#fff"
+                    android:textColor="@android:color/white"
                     android:textSize="@dimen/detail_title_text_size"
                     android:textStyle="bold" />
 
@@ -93,7 +93,7 @@
                     style="?android:attr/textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#8fff" />
+                    android:textColor="@color/byline_text_color" />
             </LinearLayout>
 
             <TextView
@@ -121,6 +121,7 @@
         android:contentDescription="@string/action_share"
         android:src="@drawable/ic_share"
         android:stateListAnimator="@anim/fab_state_list_anim"
+        android:elevation="6dp"
         app:layout_anchorGravity="bottom|right|end" />
 
 </android.support.design.widget.CoordinatorLayout>

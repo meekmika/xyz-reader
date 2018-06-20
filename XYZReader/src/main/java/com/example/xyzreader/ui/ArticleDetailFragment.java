@@ -197,8 +197,8 @@ public class ArticleDetailFragment extends Fragment implements
             @Override
             public void onClick(View view) {
                 startActivity(Intent.createChooser(ShareCompat.IntentBuilder.from(getActivity())
-                        .setType("text/plain")
-                        .setText("Some sample text")
+                        .setType(getString(R.string.mime_type_text_plain))
+                        .setText(getString(R.string.sample_text))
                         .getIntent(), getString(R.string.action_share)));
             }
         });
@@ -275,7 +275,6 @@ public class ArticleDetailFragment extends Fragment implements
 
         mCursor = cursor;
         if (mCursor != null && !mCursor.moveToFirst()) {
-            Log.e(TAG, "Error reading item detail cursor");
             mCursor.close();
             mCursor = null;
         }
